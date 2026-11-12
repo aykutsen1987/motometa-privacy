@@ -25,9 +25,9 @@ h2{font-size:1.1rem;margin:1.7em 0 .4em;padding-top:.6em;border-top:1px solid va
 <h2>2. İşlenen veriler</h2>
 <div class="w"><table>
 <tr><th>Veri</th><th>Amaç</th><th>Saklama</th></tr>
-<tr><td><b>Takma ad</b> (ayarlardan sizin girdiğiniz; girmezseniz rastgele atanır)</td><td>Çok oyunculu mod ve sıralama tablolarında gösterim</td><td>Silme talebine kadar (sunucuda)</td></tr>
-<tr><td><b>Cihaza özel rastgele kimlik</b> (GUID; telefon numaranız, e-postanız veya reklam kimliğiniz değildir)</td><td>Sıralama kaydınızı tanımak, hile önleme</td><td>Silme talebine kadar</td></tr>
-<tr><td><b>Oyun istatistikleri:</b> pist rekorları, tur/yarış süreleri, elmas sayısı</td><td>Sıralama tabloları</td><td>Silme talebine kadar</td></tr>
+<tr><td><b>Takma ad</b> (ayarlardan sizin girdiğiniz; girmezseniz rastgele atanır)</td><td>Çok oyunculu mod ve sıralama tablolarında gösterim</td><td>Silme talebine kadar; <b>365 gün hareketsiz kalırsa otomatik silinir</b></td></tr>
+<tr><td><b>Cihaza özel rastgele kimlik</b> (GUID; telefon numaranız, e-postanız veya reklam kimliğiniz değildir)</td><td>Sıralama kaydınızı tanımak, hile önleme</td><td>Silme talebine kadar; 365 gün hareketsiz kalırsa otomatik silinir</td></tr>
+<tr><td><b>Oyun istatistikleri:</b> pist rekorları, tur/yarış süreleri, elmas sayısı</td><td>Sıralama tabloları</td><td>Silme talebine kadar; 365 gün hareketsiz kalırsa otomatik silinir</td></tr>
 <tr><td><b>Çok oyunculu anlık veriler:</b> oda bilgisi, konum, hız, motor seçimi</td><td>Diğer oyunculara gösterim</td><td>Kalıcı saklanmaz; oda süresince anlık iletilir</td></tr>
 <tr><td><b>Bağlantı verileri:</b> IP adresi, bağlantı zamanı</td><td>Bağlantının kurulması ve güvenlik; barındırma sağlayıcısının teknik kayıtlarında işlenebilir</td><td>Sağlayıcının kayıt süresi</td></tr>
 <tr><td><b>Reklam ve cihaz verileri:</b> reklam kimliği (GAID), IP adresi, cihaz modeli/işletim sistemi, dil, yaklaşık konum (IP’den), uygulama sürümü, reklam gösterim/tıklama bilgileri</td><td>Reklam gösterimi ve ölçümü; reklam ortakları tarafından işlenir</td><td>Reklam ortaklarının politikalarına tabidir</td></tr>
@@ -47,14 +47,15 @@ h2{font-size:1.1rem;margin:1.7em 0 .4em;padding-top:.6em;border-top:1px solid va
 <tr><th>Hizmet</th><th>Amaç</th><th>Gizlilik politikası</th></tr>
 <tr><td>Unity LevelPlay ve bağlı reklam ağları</td><td>Reklam gösterimi ve ölçümü</td><td><a href="https://unity.com/legal/privacy-policy" rel="noopener">unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Google Play Services</td><td>Reklam kimliği ve Play altyapısı</td><td><a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></td></tr>
-<tr><td>Render (sunucu barındırma)</td><td>Çok oyunculu mod, sıralama tabloları</td><td><a href="https://render.com/privacy" rel="noopener">render.com/privacy</a></td></tr>
+<tr><td>Render (sunucu barındırma)</td><td>Çok oyunculu mod</td><td><a href="https://render.com/privacy" rel="noopener">render.com/privacy</a></td></tr>
+<tr><td>Neon (PostgreSQL veritabanı)</td><td>Sıralama tablolarının saklanması</td><td><a href="https://neon.com/privacy-policy" rel="noopener">neon.com/privacy-policy</a></td></tr>
 </table></div>
 
 <h2>6. Yurt dışına aktarım</h2>
 <p>Reklam ortakları ve barındırma sağlayıcısı verileri Türkiye dışındaki ülkelerde (ör. ABD, AB) işleyebilir. Bu aktarım, ilgili özelliklerin (reklam, çok oyunculu mod, sıralama) çalışması için gereklidir; reklam kişiselleştirmesini yukarıda belirtildiği gibi sınırlayabilirsiniz.</p>
 
 <h2>7. Saklama ve silme</h2>
-<p>Cihazınızdaki veriler uygulamayı kaldırdığınızda silinir. Sunucudaki takma ad ve sıralama kayıtlarınızı <b>Ayarlar → Genel → “Verilerimi sil”</b> ile uygulama içinden silebilirsiniz; bu işlem cihazdaki kimliğinizi ve istatistiklerinizi de sıfırlar. Sunucuya bağlanamıyorsanız veya reklam ortaklarındaki verileriniz için <a href="mailto:aykutsen1987@gmail.com">aykutsen1987@gmail.com</a> adresine yazabilirsiniz.</p>
+<p>Cihazınızdaki veriler uygulamayı kaldırdığınızda silinir. Sunucudaki takma ad ve sıralama kayıtlarınız (veritabanında saklanır; 365 gün hareketsiz kalan kayıtlar otomatik silinir) — bunları <b>Ayarlar → Genel → “Verilerimi sil”</b> ile uygulama içinden silebilirsiniz; bu işlem cihazdaki kimliğinizi ve istatistiklerinizi de sıfırlar. Sunucuya bağlanamıyorsanız veya reklam ortaklarındaki verileriniz için <a href="mailto:aykutsen1987@gmail.com">aykutsen1987@gmail.com</a> adresine yazabilirsiniz.</p>
 
 <h2>8. Çocuklar</h2>
 <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplamaz. Böyle bir durumu fark ederseniz bize yazın, ilgili veriyi sileriz.</p>
@@ -79,9 +80,9 @@ h2{font-size:1.1rem;margin:1.7em 0 .4em;padding-top:.6em;border-top:1px solid va
 <h2>2. Data we process</h2>
 <div class="w"><table>
 <tr><th>Data</th><th>Purpose</th><th>Retention</th></tr>
-<tr><td><b>Nickname</b> (entered by you in Settings; a random one is assigned otherwise)</td><td>Shown in multiplayer and leaderboards</td><td>Until you request deletion (server)</td></tr>
-<tr><td><b>Random device ID</b> (GUID; not your phone number, email or advertising ID)</td><td>Recognize your leaderboard records, prevent cheating</td><td>Until deletion</td></tr>
-<tr><td><b>Gameplay stats:</b> track records, lap/race times, gem count</td><td>Leaderboards</td><td>Until deletion</td></tr>
+<tr><td><b>Nickname</b> (entered by you in Settings; a random one is assigned otherwise)</td><td>Shown in multiplayer and leaderboards</td><td>Until you request deletion; <b>automatically deleted after 365 days of inactivity</b></td></tr>
+<tr><td><b>Random device ID</b> (GUID; not your phone number, email or advertising ID)</td><td>Recognize your leaderboard records, prevent cheating</td><td>Until deletion; automatically deleted after 365 days of inactivity</td></tr>
+<tr><td><b>Gameplay stats:</b> track records, lap/race times, gem count</td><td>Leaderboards</td><td>Until deletion; automatically deleted after 365 days of inactivity</td></tr>
 <tr><td><b>Live multiplayer data:</b> room info, position, speed, bike choice</td><td>Shown to other players</td><td>Not stored; relayed in real time</td></tr>
 <tr><td><b>Connection data:</b> IP address, connection time</td><td>Establishing the connection and security; may appear in the hosting provider’s technical logs</td><td>Provider’s log period</td></tr>
 <tr><td><b>Ad and device data:</b> advertising ID (GAID), IP address, device model/OS, language, approximate location (from IP), app version, ad impression/click data</td><td>Serving and measuring ads; processed by ad partners</td><td>Per ad partners’ policies</td></tr>
@@ -101,14 +102,15 @@ h2{font-size:1.1rem;margin:1.7em 0 .4em;padding-top:.6em;border-top:1px solid va
 <tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr>
 <tr><td>Unity LevelPlay and connected ad networks</td><td>Serving and measuring ads</td><td><a href="https://unity.com/legal/privacy-policy" rel="noopener">unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Google Play Services</td><td>Advertising ID and Play infrastructure</td><td><a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></td></tr>
-<tr><td>Render (server hosting)</td><td>Multiplayer, leaderboards</td><td><a href="https://render.com/privacy" rel="noopener">render.com/privacy</a></td></tr>
+<tr><td>Render (server hosting)</td><td>Multiplayer</td><td><a href="https://render.com/privacy" rel="noopener">render.com/privacy</a></td></tr>
+<tr><td>Neon (PostgreSQL database)</td><td>Storing leaderboards</td><td><a href="https://neon.com/privacy-policy" rel="noopener">neon.com/privacy-policy</a></td></tr>
 </table></div>
 
 <h2>6. International transfers</h2>
 <p>Ad partners and the hosting provider may process data in countries outside Türkiye (e.g. USA, EU). This transfer is needed for the related features (ads, multiplayer, leaderboards); you can limit ad personalization as described above.</p>
 
 <h2>7. Retention and deletion</h2>
-<p>Data on your device is deleted when you uninstall the app. You can delete your nickname and leaderboard records on our server in the app via <b>Settings → General → “Delete my data”</b>; this also resets your device ID and stats. If you cannot connect to the server, or for data held by ad partners, email <a href="mailto:aykutsen1987@gmail.com">aykutsen1987@gmail.com</a>.</p>
+<p>Data on your device is deleted when you uninstall the app. Your nickname and leaderboard records are stored in a database on our server and are automatically deleted after 365 days of inactivity. You can also delete them in the app via <b>Settings → General → “Delete my data”</b>; this also resets your device ID and stats. If you cannot connect to the server, or for data held by ad partners, email <a href="mailto:aykutsen1987@gmail.com">aykutsen1987@gmail.com</a>.</p>
 
 <h2>8. Children</h2>
 <p>The app is not directed to children under 13 and does not knowingly collect personal data from them. If you notice such a case, email us and we will delete the data.</p>
